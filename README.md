@@ -1,3 +1,4 @@
+# A Near-Real-Time Data Warehouse Prototype for METRO Shopping Store with MeshJoin Implimentation
 1. Project Overview:
 The project is to develop a DW that will be holding sales transactions about products, customers, and suppliers. Its objective is to leverage the Mesh Join algorithm so that huge datasets can be joined and processed properly for further analysis purposes. Major tasks in the project are:
 •	Designing schema for Data Warehouse.
