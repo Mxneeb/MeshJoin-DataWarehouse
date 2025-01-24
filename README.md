@@ -55,9 +55,6 @@ While the Mesh Join algorithm is efficient, it has some limitations:
 
 ---
 
-## **5. What I Learned from the Project**
-This project provided valuable insights into handling large datasets efficiently in a Data Warehouse and understanding how it differs from a traditional database.
-
 ### **Key Learnings**
 - **Efficient Data Processing**: Learned how Mesh Join breaks data into chunks to improve performance and reduce memory usage.
 - **Concurrency and Multi-Threading**: Gained hands-on experience with Java's multi-threading to optimize data processing through producer and consumer threads.
