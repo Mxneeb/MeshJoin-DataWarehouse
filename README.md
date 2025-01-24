@@ -65,3 +65,47 @@ While the Mesh Join algorithm is efficient, it has some limitations:
 
 ## **Conclusion**
 This project enhanced my understanding of managing transactional data in a Data Warehouse environment, optimizing ETL workflows, and ensuring data integrity. It also provided in-depth experience with the Mesh Join algorithm to process large datasets efficiently using chunking and parallel processing.
+
+---
+
+## **Step-by-Step Guide to Operate the Project**
+
+### **1. Set Up the Environment**
+
+#### **1.1 Install Java**
+- Make sure you have Java installed on your system. If not, download and install it from the [Oracle website](https://www.oracle.com/java/technologies/javase-downloads.html).
+
+#### **1.2 Install MySQL**
+- If you don't have MySQL installed, download and install it from the [MySQL website](https://www.mysql.com/downloads/).
+
+#### **1.3 Set Up MySQL Database**
+- Set up the necessary database and tables in MySQL using the SQL scripts provided with the project.
+
+---
+
+### **2. Modify Code for Setup**
+
+#### **2.1 Update File Path for CSV**
+- The program expects the CSV file to be located at a specified path on your local machine. Update the file path in the code to reflect the location of the CSV file on your system.
+
+#### **2.2 Update MySQL Database Connection**
+- Update the MySQL database URL, username, and password in the code to match your MySQL setup.
+
+---
+
+### **3. Add MySQL JDBC Driver to Your Project**
+- The program requires the MySQL JDBC driver to connect to the MySQL database. Ensure the driver is added to your project dependencies.
+
+---
+
+### **4. Run the Program**
+- After compilation, run the program. It will start two threads:
+  - **Producer Thread**: Reads transaction data from the CSV file and processes it in chunks.
+  - **Consumer Thread**: Retrieves and processes these chunks, inserting the data into the database.
+
+---
+
+### **5. Program Flow**
+- **Producer Thread**: Reads and processes transaction data from the CSV file in chunks, then sends the data to a queue.
+- **Consumer Thread**: Retrieves data from the queue, enriches it with product and customer information, and inserts it into the database.
+- The program will print processed transaction details to the console, showing the results of each operation.
